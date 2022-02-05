@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  margin-top: 30px;
+  width: 300px;
+  height: 90vh;
+  padding: 10px;
+  min-height: 100px !important;
+  border: 1px solid black;
+  background: #212124;
+  color: #fff;
+  border-radius: 10px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.top i {
+  text-decoration: none;
+  color: #fff;
+}
+hr {
+  height: 2px;
+  color: #fff;
+  background: #fff;
+}
+
+/* for different page  */
+.convert {
+  margin-top: 20px;
+  padding: 15px;
+}
+select,
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  outline: none;
+  background: #fff;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #fff8;
+}
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.data h3 {
+  margin-right: 5px;
+}
+.result {
+  margin-top: 5px;
+  display: flex;
+flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* for error  */
+#error {
+  color: red;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+#result {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 5px;
+  color: green;
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-top: 50px;
+    height: 80vh; 
+  }
+  .convert{
+    margin-top:30px;
+  }
+ 
+}
